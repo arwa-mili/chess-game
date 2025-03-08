@@ -1,0 +1,51 @@
+.square {
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.square .chess-piece {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.square .chess-piece:hover {
+    cursor: grab;
+}
+
+.square .chess-piece:active {
+    cursor: grabbing;
+}
+
+.dark-square {
+    background-color: #779556;
+}
+
+.light-square {
+    background-color: #ebecd0;
+}
+
+.square img {
+    width: 80px;
+}
+
+.square-highlight:not(.chess-piece-square)::before {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.square-highlight.chess-piece-square::before {
+    position: absolute;
+    content: " ";
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}

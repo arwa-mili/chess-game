@@ -7,15 +7,15 @@
     background-color: rgb(192, 88, 88);
 }
 
-#chessboard .black-tile {
+#chessboard .dark-square {
     background-color: #779556;
 }
 
-#chessboard .white-tile {
+#chessboard .light-square {
     background-color: #ebecd0;
 }
 
-#chessboard .tile {
+#chessboard .square {
     width: 100px;
     height: 100px
 }
