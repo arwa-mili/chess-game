@@ -3,6 +3,7 @@
     place-content: center;
     width: 100px;
     height: 100px;
+    position: relative
 }
 
 .square .chess-piece {
@@ -11,6 +12,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80px;
+
 }
 
 .square .chess-piece:hover {
@@ -27,10 +29,11 @@
 
 .light-square {
     background-color: #ebecd0;
+
 }
 
 .square img {
-    width: 80px;
+    width: 100px;
 }
 
 .square-highlight:not(.chess-piece-square)::before {
